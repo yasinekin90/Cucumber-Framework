@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -35,6 +36,16 @@ public class HotelMyCampStepDefinitions {
     @Then("giris yapilamadigini test eder")
     public void giris_yapilamadigini_test_eder() {
         Assert.assertTrue("basarılı giris yapıldı",hmcPage.girisYapilamadiYaziElementi.isDisplayed());
+    }
+
+    @And("password olarak {string} girmeli")
+    public void passwordOlarakGirmeli(String password) {
+        hmcPage.passwordTextBox.sendKeys(password);
+    }
+
+    @And("kullanici adi olarak {string} girmeli")
+    public void kullaniciAdiOlarakGirmeli(String username) {
+        hmcPage.usernameTextBox.sendKeys(username);
     }
 
 

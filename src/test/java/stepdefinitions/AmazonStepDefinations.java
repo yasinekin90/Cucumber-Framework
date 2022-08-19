@@ -17,6 +17,11 @@ public class AmazonStepDefinations {
         // Write code here that turns the phrase above into concrete actions
         Driver.getDriver().get(ConfigurationReader.getProperty("AmazonURL"));
     }
+
+    @Given("kullanici {string} sayfasina gider.")
+    public void kullanici_sayfasina_gider(String istenenURL) {
+       Driver.getDriver().get(ConfigurationReader.getProperty(istenenURL));
+    }
     @Given("iphone icin arama yapar")
     public void iphone_icin_arama_yapar() {
         // Write code here that turns the phrase above into concrete actions

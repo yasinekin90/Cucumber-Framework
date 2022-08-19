@@ -16,7 +16,7 @@ Feature: US102 background ile amazon search testi
         And tea pot icin arama yapar.
         Then sonuclarin teapot icerdigini test eder.
 
-     @amazonspace
+  @amazonspace
         Scenario: TC03_Amazon flower search testi
           And flower icin arama yapar
           Then sonuclarin flower icerdigini test eder

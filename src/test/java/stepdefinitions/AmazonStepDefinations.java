@@ -54,7 +54,7 @@ public class AmazonStepDefinations {
     @Then("sonuclarin flower icerdigini test eder")
     public void sonuclarin_flower_icerdigini_test_eder() {
         String sonuc=amazonPage.sonucIcerigi.getText();
-        Assert.assertTrue(sonuc.contains("flower"));
+        Assert.assertTrue(sonuc.contains("flower1"));
     }
 
     @Given("{string} icin arama yapar")

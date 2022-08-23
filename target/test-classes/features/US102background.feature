@@ -1,5 +1,5 @@
 
-@amazontum
+@amazontum @paralel2
 Feature: US102 background ile amazon search testi
 
 

@@ -1,6 +1,6 @@
 Feature: Parametreli stepdefinition olusturma
 
-@parametre
+@parametre @paralel1
   Scenario: TC04_parametre kullanimi
   Given kullanici amazon sayfasina gider.
     And "macbook" icin arama yapar
